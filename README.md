@@ -46,7 +46,8 @@ Following are the complete tasks of the project and election results
 Depending on the dataset structure, you may modify the index number (hardcode or use of variable) in "candidate_name=[2]" and "county_name=[1]" for any election. 
 We can also declare more list and dictionary to track additional information such as age, gender, ...etc and add another set of ***for*** loop and ***if*** statement to deeper analysis of election (see below).
 
-	####**create list/dictionary**
+	**create list/dictionary**
+	
 	-create an empty list and dictionary
 		candidate_options = []
 		candidate_votes = {}
@@ -63,7 +64,7 @@ We can also declare more list and dictionary to track additional information suc
 		winning_turnout=0
 		winning_c_percentage=0
 
-	####**calculating votes**
+	**calculating votes**
 	-Total candidate and county votes
 	-use for loop to extract candidate name and county name by index number
 		candidate_name=[2]
@@ -78,7 +79,7 @@ We can also declare more list and dictionary to track additional information suc
 			county_votes[county_name]=0
 			county_votes[county_name]+=1
 			
-  	####**output**
+  	**output**
 	-use f-string to format and display the election result 
 		election_results = (
         		f"\nElection Results\n"
