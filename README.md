@@ -12,7 +12,9 @@ Following are the complete tasks of the project and election results
 2. Breakdown of the percentage of total votes and the number of votes for each county 
 
 	-Jefferson: 10.5% (38,855)
+	
 	-Denver: 82.8% (306,055)
+	
 	-Arapahoe: 6.7% (24,801)
 
 3. Determine the county with the highest votes
@@ -22,13 +24,17 @@ Following are the complete tasks of the project and election results
 4. Breakdown of the percentage of total votes and the number of votes for each candidate
 
 	-Charles Casper Stockham: 23.0% (85,213)
+	
 	-Diana DeGette: 73.8% (272,892)
+	
 	-Raymon Anthony Doane: 3.1% (11,606)
 
 5. Determine the winning candidate
 
 	-Winner: Diana DeGette
+	
 	-Vote count: 272,892
+	
 	-Vote percentage: 73.8%
 
 ###Resources
