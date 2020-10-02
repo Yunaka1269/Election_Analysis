@@ -44,13 +44,9 @@ Following are the complete tasks of the project and election results
 ##Summary
 
 Depending on the dataset structure, you may modify the index number (hardcode or use of variable) in "candidate_name=[2]" and "county_name=[1]" for any election. 
-We can also declare more list and dictionary to track additional information such as age, gender, ...etc and add another set of for loop and if statement to deeper analysis of election.
+We can also declare more list and dictionary to track additional information such as age, gender, ...etc and add another set of **for** loop and **if** statement to deeper analysis of election (see below).
 
-
-
-	-Iitialize a total vote counter.
-		total_votes = 0
-
+        ####create list/dictionary
 	-create an empty list and dictionary
 		candidate_options = []
 		candidate_votes = {}
@@ -67,26 +63,21 @@ We can also declare more list and dictionary to track additional information suc
 		winning_turnout=0
 		winning_c_percentage=0
 
-	-Total Vote
-		-counting the number of rows from second row since the first row is header
-			total_votes=0
-			header = next(reader)" 
-			for row in reader:
-				Total_votes = total_votes+=1
+        ####calculating votes
 	-Total candidate and county votes
-		-use for loop to extract candidate name and county name by index number
-			candidate_name=[2]
-			county_name=[1]
-		-within for loop, make candidate and county list if the name does not match any existing one in the list, then calculate vote counts
-			if candidate_name not in candidate_options:
-				candidate_options.append(candidate_name)
-				candidate_votes[candidate_name]=0
-				candodate_votes[candidate_name]+=1
-			if county_name not in county_options:
-				county_options.append(county_name)
-				county_votes[county_name]=0
-				county_votes[county_name]+=1 
-
+	-use for loop to extract candidate name and county name by index number
+		candidate_name=[2]
+		county_name=[1]
+	-within for loop, make candidate and county list if the name does not match any existing one in the list, then calculate vote counts
+		if candidate_name not in candidate_options:
+			candidate_options.append(candidate_name)
+			candidate_votes[candidate_name]=0
+			candodate_votes[candidate_name]+=1
+		if county_name not in county_options:
+			county_options.append(county_name)
+			county_votes[county_name]=0
+			county_votes[county_name]+=1 
+        ####output
 	-use f-string to format and display the election result 
 		election_results = (
         		f"\nElection Results\n"
@@ -111,7 +102,7 @@ We can also declare more list and dictionary to track additional information suc
    		        f"\n-------------------------\n"
         		f"Largest County Turnout: {winning_county:}\n"
         		f"-------------------------\n")
-    		print(county_results)
+    		print(county_results)	
 	-use for loop to get candidate name from the candidate dictionary then calculate the number of votes and percentage
 		for candidate_name in candidate_votes:
         		votes = candidate_votes.get(candidate_name)
